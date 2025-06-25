@@ -1,0 +1,15 @@
+{
+  "name": "Harshit Kumar Sahu",
+  "pet_name": "Honey",
+  "phone": "7587140713",
+  "email": "harshitsahu.hs66@gmail.com",
+  "password": "123",
+  "job": "Principal Associate",
+  "organization": "IIT Bhilai",
+  "gender": "Male",
+  "religion": "Hindi",
+  "behavior": {
+    "mood": "neutral",
+    "tone": "curious"
+  }
+}

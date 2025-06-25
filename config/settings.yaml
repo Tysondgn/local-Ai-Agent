@@ -1,0 +1,4 @@
+default_model: openhermes
+ollama_url: http://localhost:11434
+profile_path: data/profile.json
+log_dir: data/logs/

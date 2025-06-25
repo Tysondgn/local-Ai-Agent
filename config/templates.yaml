@@ -1,0 +1,34 @@
+openhermes:
+  format: |
+    <|system|>
+    {system}
+    {history}
+    <|user|>
+    {user}
+    <|assistant|>
+
+  history_format: "<|{role}|>\n{content}"
+
+llama3:
+  format: |
+    <<SYS>>
+    {system}
+    <</SYS>>
+
+    {history}
+
+    [INST] {user} [/INST]
+
+  history_format: |
+    [INST] {content} [/INST] if role == "user"
+    {content} if role == "assistant"
+
+chatml:
+  format: |
+    [
+      {{ "role": "system", "content": "{system}" }},
+      {history},
+      {{ "role": "user", "content": "{user}" }}
+    ]
+
+  history_format: '{{ "role": "{role}", "content": "{content}" }}'

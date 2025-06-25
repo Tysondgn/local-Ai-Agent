@@ -1,0 +1,5 @@
+aiohttp
+pyspellchecker
+numpy
+sentence-transformers
+scikit-learn 
